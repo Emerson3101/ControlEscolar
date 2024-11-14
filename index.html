@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Recursos Humanos - Terrasen Digital</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #004466;
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        /* Barra lateral de navegación */
+        nav {
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #022c43;
+            padding-top: 20px;
+            color: white;
+        }
+
+        nav h2 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 1em;
+            font-size: 1.3em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            padding: 15px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #034f84;
+        }
+
+        /* Contenido principal */
+        main {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        .section-header {
+            font-size: 1.8em;
+            color: #022c43;
+            margin-bottom: 0.5em;
+        }
+
+        /* Estilos de las tarjetas de información */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        .card h3 {
+            color: #004466;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            
+            main {
+                margin: 0;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        Administración de Recursos Humanos - Terrasen Digital
+    </header>
+
+    <!-- Barra lateral de navegación -->
+    <nav>
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="#empleados">Empleados</a></li>
+            <li><a href="#puestos">Puestos</a></li>
+            <li><a href="#evaluaciones">Evaluaciones</a></li>
+            <li><a href="#asistencias">Asistencias</a></li>
+            <li><a href="#reportes">Reportes</a></li>
+            <li><a href="#configuracion">Configuración</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="empleados">
+            <div class="section-header">Empleados</div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Agregar Empleado</h3>
+                    <p>Registra nuevos empleados y asigna roles específicos dentro de la empresa.</p>
+                </div>
+                <div class="card">
+                    <h3>Lista de Empleados</h3>
+                    <p>Sergio es un imbécil</p>
+                </div>
+                <div class="card">
+                    <h3>Actualizar Información</h3>
+                    <p>Edita o actualiza la información del personal existente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="puestos">
+            <div class="section-header">Puestos</div>
+            <p>Define y gestiona los diferentes puestos y departamentos de Terrasen Digital.</p>
+        </section>
+
+        <section id="evaluaciones">
+            <div class="section-header">Evaluaciones</div>
+            <p>Programa y visualiza las evaluaciones de desempeño del personal.</p>
+        </section>
+
+        <section id="asistencias">
+            <div class="section-header">Asistencias</div>
+            <p>Monitorea y registra la asistencia de los empleados.</p>
+        </section>
+
+        <section id="reportes">
+            <div class="section-header">Reportes</div>
+            <p>Genera reportes detallados sobre el rendimiento y otros indicadores de RRHH.</p>
+        </section>
+
+        <section id="configuracion">
+            <div class="section-header">Configuración</div>
+            <p>Ajusta la configuración general de la administración de recursos humanos.</p>
+        </section>
+    </main>
+
+</body>
+</html>
