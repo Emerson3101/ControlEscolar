@@ -1,6 +1,6 @@
 <?php
 // Database connection parameters
-$connection = pg_connect("host=localhost port=5432 dbname=ControlEscolar user=postgres password=Abysswalker");
+$connection = pg_connect("host=controlescolar.postgres.database.azure.com port=5432 dbname=controlescolar user=memerson password=Abysswalker@1");
 
 // Check connection
 if (!$connection) {
